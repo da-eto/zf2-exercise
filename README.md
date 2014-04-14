@@ -1,16 +1,21 @@
-Zend Framework 2 Exercise (Vacancies)
-=====================================
+ZF2 Exercise (Vacancies)
+========================
 
 Introduction
 ------------
 
-This is a simple vacancies application using the ZF2 MVC layer and Doctrine 2 as ORM.
+This is a simple vacancies application using the Zend Framework 2 MVC layer and the Doctrine 2 ORM.
 This application is meant to be used as a simple example for ZF2 usage.
+
+Requirements
+------------
+
+PHP >= 5.4
 
 Installation
 ------------
 
-The recommended way to get a working copy of this project is to clone the repository
+The simple way to get a working copy of this project is to clone the repository
 and use `composer` to install dependencies using the `install` command:
 
 ```bash
@@ -25,8 +30,7 @@ Or if you have `composer` installed globally on developer machine you can leave
 composer install
 ```
 
-After installation you can copy `config/autoload/local.php.dist` to `config/autoload/local.php.`
-and change default local options.
+After installation you can copy `config/autoload/local.php.dist` to `config/autoload/local.php.` and change options.
 
 Web Server Setup
 ----------------
@@ -39,8 +43,7 @@ The simplest way to get started is to start the internal PHP cli-server in the r
 php -S 127.0.0.1:8080 -t public/ public/index.php
 ```
 
-This will start the cli-server on port 8080, and bind it to all network
-interfaces.
+This will start the cli-server on port 8080, and bind it to loopback network interface (localhost).
 
 **Note: ** The built-in CLI server is *for development only*.
 
