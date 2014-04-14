@@ -3,8 +3,65 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0c133f595cba7fa092ccd533aafcf758",
+    "hash": "fff83ddb0d5191a264f40337ee5ed1a0",
     "packages": [
+        {
+            "name": "twig/twig",
+            "version": "v1.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/1fb5784662f438d7d96a541e305e28b812e2eeed",
+                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "https://github.com/fabpot/Twig/graphs/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2014-02-13 10:19:29"
+        },
         {
             "name": "zendframework/zendframework",
             "version": "2.3.0",
@@ -167,6 +224,55 @@
                 "zf2"
             ],
             "time": "2014-03-05 22:25:44"
+        },
+        {
+            "name": "zf-commons/zfc-twig",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ZF-Commons/ZfcTwig.git",
+                "reference": "735999e652b8953493a535f4c1e6bcd26ecefba4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ZF-Commons/ZfcTwig/zipball/735999e652b8953493a535f4c1e6bcd26ecefba4",
+                "reference": "735999e652b8953493a535f4c1e6bcd26ecefba4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "twig/twig": "~1.13"
+            },
+            "require-dev": {
+                "zendframework/zend-view": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ZfcTwig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kyle Spraggs",
+                    "email": "theman@spiffyjr.me",
+                    "homepage": "http://www.spiffyjr.me/"
+                },
+                {
+                    "name": "Cosmin Harangus",
+                    "email": "cosmin@zendexperts.com",
+                    "homepage": "http://www.zendexperts.com/"
+                }
+            ],
+            "description": "Zend Framework 2 Module that provides a Twig rendering strategy and extensions to render actions or trigger events from your templates",
+            "homepage": "http://www.github.com/ZF-Commons/ZfcTwig/",
+            "keywords": [
+                "module",
+                "twig",
+                "zf2"
+            ],
+            "time": "2014-03-05 18:08:57"
         }
     ],
     "packages-dev": [
@@ -180,7 +286,7 @@
 
     ],
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.4"
     },
     "platform-dev": [
 
