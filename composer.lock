@@ -3,8 +3,130 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fff83ddb0d5191a264f40337ee5ed1a0",
+    "hash": "fd08a60d1b119bc7586f2fe350d4f3fc",
     "packages": [
+        {
+            "name": "ocramius/ocra-service-manager",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/OcraServiceManager.git",
+                "reference": "2ba4ba33f8486d56d28bbe9e14bd3d688a1500c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/OcraServiceManager/zipball/2ba4ba33f8486d56d28bbe9e14bd3d688a1500c8",
+                "reference": "2ba4ba33f8486d56d28bbe9e14bd3d688a1500c8",
+                "shasum": ""
+            },
+            "require": {
+                "ocramius/proxy-manager": "0.5.*",
+                "zendframework/zend-http": "~2.2",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-mvc": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7",
+                "satooshi/php-coveralls": "0.6.*",
+                "squizlabs/php_codesniffer": "1.4.*",
+                "zendframework/zend-developer-tools": "0.*",
+                "zendframework/zendframework": "~2.2"
+            },
+            "suggest": {
+                "zendframework/zend-developer-tools": "Allows displaying service dependencies"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "OcraServiceManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ZF2 Service manager extensions to allow service proxies and dependency graph generation",
+            "homepage": "https://github.com/Ocramius/OcraServiceManager",
+            "time": "2013-12-22 18:51:47"
+        },
+        {
+            "name": "ocramius/proxy-manager",
+            "version": "0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/ProxyManager.git",
+                "reference": "eaaf10f9a24ffd79a3e388809f6d61f229e261bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/eaaf10f9a24ffd79a3e388809f6d61f229e261bd",
+                "reference": "eaaf10f9a24ffd79a3e388809f6d61f229e261bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-code": ">2.2.5,<3.0"
+            },
+            "require-dev": {
+                "ext-phar": "*",
+                "phpunit/phpunit": "~3.7",
+                "squizlabs/php_codesniffer": "1.5.*"
+            },
+            "suggest": {
+                "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects",
+                "zendframework/zend-json": "To have the JsonRpc adapter (Remote Object feature)",
+                "zendframework/zend-soap": "To have the Soap adapter (Remote Object feature)",
+                "zendframework/zend-stdlib": "To use the hydrator proxy",
+                "zendframework/zend-xmlrpc": "To have the XmlRpc adapter (Remote Object feature)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ProxyManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A library providing utilities to generate, instantiate and generally operate with Object Proxies",
+            "homepage": "https://github.com/Ocramius/ProxyManager",
+            "keywords": [
+                "aop",
+                "lazy loading",
+                "proxy",
+                "proxy pattern",
+                "service proxies"
+            ],
+            "time": "2014-03-12 14:00:19"
+        },
         {
             "name": "twig/twig",
             "version": "v1.15.1",
@@ -61,6 +183,67 @@
                 "templating"
             ],
             "time": "2014-02-13 10:19:29"
+        },
+        {
+            "name": "zendframework/zend-developer-tools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/ZendDeveloperTools.git",
+                "reference": "763cecf9d68fc0d3765d45847047817a47ecdd4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/763cecf9d68fc0d3765d45847047817a47ecdd4a",
+                "reference": "763cecf9d68fc0d3765d45847047817a47ecdd4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-debug": "2.*",
+                "zendframework/zend-eventmanager": "2.*",
+                "zendframework/zend-mvc": "2.*",
+                "zendframework/zend-servicemanager": "2.*",
+                "zendframework/zend-stdlib": "2.*",
+                "zendframework/zend-version": "2.*"
+            },
+            "suggest": {
+                "bjyoungblood/bjy-profiler": "Version: dev-master, allows the usage of the (Zend) Db collector.",
+                "ocramius/ocra-service-manager": "OcraServiceManager can help you track dependencies within your application."
+            },
+            "type": "zf-module",
+            "autoload": {
+                "psr-0": {
+                    "ZendDeveloperTools": "src/"
+                },
+                "classmap": [
+                    "./Module.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Evan Coury",
+                    "email": "me@evancoury.com",
+                    "homepage": "http://blog.evan.pro/"
+                },
+                {
+                    "name": "Eric Boh",
+                    "email": "cossish@gmail.com"
+                }
+            ],
+            "description": "Module for developer and debug tools for working with the ZF2 MVC layer.",
+            "homepage": "https://github.com/zendframework/ZendDeveloperTools",
+            "keywords": [
+                "debug",
+                "developer",
+                "module",
+                "zf2"
+            ],
+            "time": "2014-03-23 05:38:41"
         },
         {
             "name": "zendframework/zendframework",
@@ -282,9 +465,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "zendframework/zend-developer-tools": 20
+    },
     "platform": {
         "php": ">=5.4"
     },

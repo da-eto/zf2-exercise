@@ -11,4 +11,13 @@
  * credentials from accidentally being committed into version control.
  */
 
-return [];
+return [
+    'zenddevelopertools' => [
+        'profiler' => [
+            'enabled' => true,
+        ],
+        'toolbar' => [
+            'enabled' => true,
+        ],
+    ]
+];
