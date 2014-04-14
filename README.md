@@ -3,14 +3,13 @@ Zend Framework 2 Exercise (Vacancies)
 
 Introduction
 ------------
+
 This is a simple vacancies application using the ZF2 MVC layer and Doctrine 2 as ORM.
 This application is meant to be used as a simple example for ZF2 usage.
 
 Installation
 ------------
 
-Using Composer (recommended)
-----------------------------
 The recommended way to get a working copy of this project is to clone the repository
 and use `composer` to install dependencies using the `install` command:
 
@@ -25,6 +24,9 @@ Or if you have `composer` installed globally on developer machine you can leave
 ```bash
 composer install
 ```
+
+After installation you can copy `config/autoload/local.php.dist` to `config/autoload/local.php.`
+and change default local options.
 
 Web Server Setup
 ----------------
@@ -51,7 +53,6 @@ project and you should be ready to go! It should look something like below:
 <VirtualHost *:80>
     ServerName zf2-exercise.localhost
     DocumentRoot /path/to/zf2-exercise/public
-    SetEnv APPLICATION_ENV "development"
     <Directory /path/to/zf2-tutorial/public>
         DirectoryIndex index.php
         AllowOverride All
