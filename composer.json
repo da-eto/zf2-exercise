@@ -1,0 +1,12 @@
+{
+    "name": "da-eto-ya/zf2-exercise",
+    "description": "ZF2 Exercise (Vacancies)",
+    "minimum-stability": "stable",
+    "config": {
+        "bin-dir": "bin"
+    },
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework": "2.3.*"
+    }
+}
