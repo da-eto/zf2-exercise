@@ -10,13 +10,19 @@
             </div>
 
             <div class="panel-body">
-                <ul>
+                <dl class="vacancy-list">
                     <?php
                     foreach ($this->vacancies as $vacancy) {
-                        print '<li>' . $vacancy->getName() . ' (' . $vacancy->getDepartment()->getName() . ')</li>';
+                        print '<dt>'
+                            . $vacancy->getName()
+                            . ' (' . $vacancy->getDepartment()->getName() . ')'
+                            . '</dt>'
+                            . '<dd>'
+                            . $vacancy->getDescription()
+                            . '</dd>';
                     }
                     ?>
-                </ul>
+                </dl>
             </div>
         </div>
     </div>

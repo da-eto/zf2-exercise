@@ -3,25 +3,26 @@ Feature: As a site user
 
   Background: Existent departments
     Given there are departments on site:
-      | name         |
-      | Technologies |
-      | Sales        |
+      | name          |
+      | IT Department |
+      | Sales         |
 
-  Scenario: See vacancy with department name
+  Scenario: User see vacancy with department name
     Given there are vacancies on site:
-      | name       | department   |
-      | Programmer | Technologies |
+      | name       | department    | description |
+      | Programmer | IT Department | Lead        |
     And I am on homepage
     Then I should see "Programmer"
-    And I should see "Technologies"
+    And I should see "IT Department"
+    And I should see "PHP Lead"
     But I should not see "Management"
 
-  Scenario: See multiple vacancies
+  Scenario: User see multiple vacancies
     Given there are vacancies on site:
-      | name       | department   |
-      | Programmer | Technologies |
-      | Manager    | Sales        |
-      | Engineer   | Technologies |
+      | name       | department    |
+      | Programmer | IT Department |
+      | Manager    | Sales         |
+      | Engineer   | IT Department |
     And I am on homepage
     Then I should see "Programmer"
     And I should see "Manager"

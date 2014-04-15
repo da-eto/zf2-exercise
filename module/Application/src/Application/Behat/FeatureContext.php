@@ -94,6 +94,11 @@ class FeatureContext extends MinkContext
         foreach ($table->getHash() as $row) {
             $vacancy = new Vacancy();
             $vacancy->setName($row['name']);
+
+            if (!empty($row['description'])) {
+                $vacancy->setDescription($row['description']);
+            }
+
             $department = $departmentRepo->findOneBy(['name' => $row['department']]);
             $vacancy->setDepartment($department);
 

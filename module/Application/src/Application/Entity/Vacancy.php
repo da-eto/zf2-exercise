@@ -29,6 +29,12 @@ class Vacancy
     private $name;
 
     /**
+     * @var string
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $description;
+
+    /**
      * @var Department
      * @ORM\ManyToOne(targetEntity="Department", inversedBy="vacancies")
      */
@@ -56,6 +62,22 @@ class Vacancy
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
     }
 
     /**
