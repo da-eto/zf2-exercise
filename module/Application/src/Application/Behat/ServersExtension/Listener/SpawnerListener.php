@@ -14,7 +14,7 @@ class SpawnerListener implements EventSubscriberInterface
             "localhost:8642",
             "-t",
             "./public",
-            "./public/index.php",
+            "./public/index_test.php",
         ],
     ];
 

@@ -4,7 +4,7 @@ default:
   extensions:
     Application\Behat\ServersExtension\Extension: ~
     Behat\MinkExtension\Extension:
-      base_url: http://localhost:8642/index.php
+      base_url: http://localhost:8642/index_test.php
       goutte: ~
       show_cmd: firefox %s
   paths:
