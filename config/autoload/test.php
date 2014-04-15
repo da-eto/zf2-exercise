@@ -31,4 +31,9 @@ return [
             ],
         ],
     ],
+    'zfctwig' => [
+        'environment_options' => [
+            'cache' => false,
+        ]
+    ],
 ];

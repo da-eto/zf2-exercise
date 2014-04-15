@@ -35,5 +35,13 @@ return [
             ],
         ],
     ],
+    'view_manager' => [
+        'strategies' => ['ZfcTwigViewStrategy']
+    ],
+    'zfctwig' => [
+        'environment_options' => [
+            'cache' => 'data/cache/twig',
+        ]
+    ],
 ];
 
