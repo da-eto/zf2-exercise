@@ -1,0 +1,5 @@
+services:
+  behat.listener.spawner_listener:
+    class: Application\Behat\ServersExtension\Listener\SpawnerListener
+    tags:
+      - { name: behat.event_subscriber }

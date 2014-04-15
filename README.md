@@ -68,3 +68,12 @@ project and you should be ready to go! It should look something like below:
     </Directory>
 </VirtualHost>
 ```
+
+Testing
+-------
+
+You can test functionality by running `behat`:
+
+```bash
+bin/behat
+```

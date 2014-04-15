@@ -31,8 +31,8 @@ return [
                     'user'     => 'root',
                     'password' => '',
                     'dbname'   => 'vacancies',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 ];

@@ -1,0 +1,13 @@
+# behat.yml
+
+default:
+  extensions:
+    Application\Behat\ServersExtension\Extension: ~
+    Behat\MinkExtension\Extension:
+      base_url: http://localhost:8642/index.php
+      goutte: ~
+      show_cmd: firefox %s
+  paths:
+    features: features
+  context:
+    class: Application\Behat\FeatureContext
