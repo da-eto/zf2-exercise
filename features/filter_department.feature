@@ -23,8 +23,8 @@ Feature: As a site user
 
   Scenario: User filter vacancies and found nothing
     Given there are vacancies on site:
-      | name       | department    |
-      | Manager    | Sales         |
+      | name    | department |
+      | Manager | Sales      |
     And I am on homepage
     Then I select "IT Department" from "Department"
     And press "Filter"

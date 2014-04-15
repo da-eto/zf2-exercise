@@ -7,6 +7,8 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
+use DoctrineModule\Persistence\ObjectManagerAwareInterface;
+
 return [
     'router' => [
         'routes' => [
@@ -60,6 +62,14 @@ return [
         'aliases' => [
             'translator' => 'MvcTranslator',
         ],
+        'initializers' => [
+            'ObjectManagerAware' => function($service, $locator) {
+                if ($service instanceof ObjectManagerAwareInterface) {
+                    $em = $locator->get('Doctrine\ORM\EntityManager');
+                    $service->setObjectManager($em);
+                }
+            }
+        ]
     ],
     'translator' => [
         'locale' => 'en_US',
