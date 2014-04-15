@@ -11,6 +11,7 @@ Requirements
 ------------
 
 PHP >= 5.4
+MySQL Server (Percona Server) >= 5.0
 
 Installation
 ------------
@@ -30,7 +31,10 @@ Or if you have `composer` installed globally on developer machine you can leave
 composer install
 ```
 
-After installation you can copy `config/autoload/local.php.dist` to `config/autoload/local.php.` and change options.
+Then create MySQL database `vacancies`. You may change this name and adjust it in configuration.
+
+After installation you can copy `config/autoload/local.php.dist` to `config/autoload/local.php.`
+and change options (DB connection settings, disable toolbar, etc).
 
 Web Server Setup
 ----------------

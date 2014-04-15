@@ -5,6 +5,8 @@ return [
         'ZendDeveloperTools',
         'OcraServiceManager',
         'ZfcTwig',
+        'DoctrineModule',
+        'DoctrineORMModule',
         'Application',
     ],
 

@@ -10,6 +10,8 @@
         "zendframework/zendframework": "2.3.*",
         "zf-commons/zfc-twig": "1.2.*",
         "zendframework/zend-developer-tools": "dev-master",
-        "ocramius/ocra-service-manager": "2.1.*"
+        "ocramius/ocra-service-manager": "2.1.*",
+        "doctrine/orm": "2.4.*",
+        "doctrine/doctrine-orm-module": "0.*"
     }
 }
